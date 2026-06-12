@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Grass Cafe — Breakfast, Brunch & Lunch | Burritos, Wraps & More in Downtown Charleston SC</title>
+  <meta name="description" content="Sweet Grass Cafe serves breakfast, brunch, and lunch in Downtown Charleston — hearty breakfast burritos, chicken caesar wraps, breakfast sandwiches, pressed toasties, and fresh-baked pastries at 471 King Street. Order pickup online." />
+  <meta name="keywords" content="sweet grass cafe charleston, breakfast downtown charleston, brunch king street, lunch charleston sc, breakfast burritos charleston, chicken caesar wrap charleston, breakfast sandwich king street, toasties charleston, charleston brunch cafe, downtown charleston food" />
+  <link rel="canonical" href="https://sweetgrasscafe.com/" />
+  <meta property="og:title" content="Sweet Grass Cafe — Breakfast, Brunch & Lunch on King Street, Charleston" />
+  <meta property="og:description" content="Breakfast burritos, caesar wraps, toasties & fresh-baked pastries. A food-first cafe from the Sweet Palm Coffee family. 471 King St, Downtown Charleston SC." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:url" content="https://sweetgrasscafe.com/" />
+  <meta name="geo.region" content="US-SC" />
+  <meta name="geo.placename" content="Charleston" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sweet Grass Cafe",
+    "alternateName": "Sweet Grass Cafe Charleston",
+    "url": "https://sweetgrasscafe.com/",
+    "image": "https://sweetgrasscafe.com/og-image.jpg",
+    "servesCuisine": ["Breakfast", "Brunch", "Lunch", "American", "Cafe"],
+    "priceRange": "$",
+    "telephone": "+18439743594",
+    "menu": "https://cash.app/order/$sweetpalmcoffeellc/pickup",
+    "acceptsReservations": "False",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "471 King Street",
+      "addressLocality": "Charleston",
+      "addressRegion": "SC",
+      "postalCode": "29403",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.7892,
+      "longitude": -79.9384
+    },
+    "areaServed": ["Downtown Charleston", "King Street", "French Quarter", "Cannonborough", "Radcliffeborough", "College of Charleston", "Harleston Village"],
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Sweet Palm Coffee LLC",
+      "url": "https://www.sweetpalmcoffee.com/"
+    },
+    "hasMenu": {
+      "@type": "Menu",
+      "hasMenuSection": [
+        { "@type": "MenuSection", "name": "Breakfast Burritos" },
+        { "@type": "MenuSection", "name": "Breakfast Sandwiches" },
+        { "@type": "MenuSection", "name": "Caesar Wraps" },
+        { "@type": "MenuSection", "name": "Toasties & Light Bites" },
+        { "@type": "MenuSection", "name": "House Baked Pastries" }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --grass-gold: #C2902F;
+      --grass-gold-deep: #9C6F1E;
+      --marsh-green: #33502C;
+      --marsh-deep: #22381D;
+      --cream: #FCF7EB;
+      --cream-deep: #F4EAD3;
+      --basket-brown: #5E4426;
+      --ink: #2A2417;
+      --paprika: #BC4B26;
+    }
+
+    body {
+      font-family: 'Karla', sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+
+    h1, h2, h3, h4, h5, .display-font {
+      font-family: 'Fraunces', serif;
+    }
+
+    .eyebrow {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-size: .8rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--grass-gold-deep);
+    }
+
+    /* ---- Sweetgrass weave band: the signature motif ---- */
+    .weave-band {
+      height: 14px;
+      background:
+        repeating-linear-gradient(45deg, var(--grass-gold) 0 6px, transparent 6px 12px),
+        repeating-linear-gradient(-45deg, var(--grass-gold-deep) 0 6px, var(--cream-deep) 6px 12px);
+      opacity: .85;
+    }
+    .weave-band.on-dark {
+      background:
+        repeating-linear-gradient(45deg, var(--grass-gold) 0 6px, transparent 6px 12px),
+        repeating-linear-gradient(-45deg, var(--grass-gold-deep) 0 6px, var(--marsh-deep) 6px 12px);
+    }
+
+    /* ---- Navbar ---- */
+    .navbar {
+      background: var(--cream);
+      border-bottom: 1px solid rgba(94,68,38,.18);
+    }
+    .navbar-brand {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: var(--marsh-green) !important;
+    }
+    .navbar-brand .grass-mark { color: var(--grass-gold-deep); }
+    .nav-link { color: var(--ink) !important; font-weight: 600; }
+    .nav-link:hover { color: var(--grass-gold-deep) !important; }
+
+    .btn-order {
+      background: var(--paprika);
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      border-radius: 999px;
+      padding: .65rem 1.5rem;
+    }
+    .btn-order:hover { background: #A03D1D; color: #fff; }
+
+    .btn-outline-grass {
+      border: 2px solid var(--marsh-green);
+      color: var(--marsh-green);
+      font-weight: 700;
+      border-radius: 999px;
+      padding: .6rem 1.5rem;
+      background: transparent;
+    }
+    .btn-outline-grass:hover { background: var(--marsh-green); color: var(--cream); }
+
+    /* ---- Hero ---- */
+    .hero {
+      background: var(--marsh-green);
+      color: var(--cream);
+      position: relative;
+      overflow: hidden;
+      padding: 5.5rem 0 5rem;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(63deg, rgba(194,144,47,.07) 0 3px, transparent 3px 26px),
+        repeating-linear-gradient(117deg, rgba(194,144,47,.05) 0 3px, transparent 3px 26px);
+      pointer-events: none;
+    }
+    .hero h1 {
+      font-weight: 900;
+      font-size: clamp(2.6rem, 6vw, 4.5rem);
+      line-height: 1.05;
+      letter-spacing: -.01em;
+    }
+    .hero h1 .gold { color: var(--grass-gold); }
+    .hero .meal-line {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+      font-weight: 600;
+      color: var(--grass-gold);
+      letter-spacing: .04em;
+    }
+    .hero .meal-line .dot { color: var(--cream); opacity: .55; padding: 0 .45rem; }
+    .hero-lede { max-width: 620px; color: rgba(252,247,235,.9); }
+    .hero-chips span {
+      display: inline-block;
+      border: 1px solid rgba(194,144,47,.55);
+      color: var(--cream);
+      border-radius: 999px;
+      padding: .3rem .95rem;
+      font-size: .85rem;
+      font-weight: 600;
+      margin: .25rem .35rem .25rem 0;
+    }
+
+    /* ---- Info strip ---- */
+    .info-strip {
+      background: var(--grass-gold);
+      color: var(--marsh-deep);
+      font-weight: 700;
+      font-size: .95rem;
+      padding: .65rem 0;
+    }
+    .info-strip a { color: var(--marsh-deep); text-decoration: underline; }
+
+    /* ---- Menu ---- */
+    .menu-section { padding: 4.5rem 0; }
+    .menu-section h2 {
+      font-weight: 700;
+      font-size: clamp(2rem, 4.2vw, 3rem);
+      color: var(--marsh-green);
+    }
+    .menu-cat {
+      margin-top: 3.25rem;
+    }
+    .menu-cat-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      border-bottom: 3px solid var(--grass-gold);
+      padding-bottom: .5rem;
+      margin-bottom: 1.5rem;
+    }
+    .menu-cat-header h3 {
+      font-weight: 700;
+      font-size: 1.7rem;
+      color: var(--basket-brown);
+      margin: 0;
+    }
+    .menu-cat-header .cat-note {
+      font-size: .9rem;
+      color: var(--grass-gold-deep);
+      font-weight: 600;
+    }
+    .menu-item {
+      background: #fff;
+      border: 1px solid rgba(94,68,38,.14);
+      border-radius: 14px;
+      padding: 1.25rem 1.4rem;
+      height: 100%;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(42,36,23,.10);
+    }
+    .menu-item .item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: .75rem;
+    }
+    .menu-item h4 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0;
+    }
+    .menu-item .price {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      color: var(--paprika);
+      white-space: nowrap;
+      font-size: 1.1rem;
+    }
+    .menu-item p {
+      font-size: .93rem;
+      color: #5d553f;
+      margin: .5rem 0 0;
+    }
+    .badge-tag {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      background: var(--cream-deep);
+      color: var(--grass-gold-deep);
+      border-radius: 999px;
+      padding: .2rem .65rem;
+      margin-top: .65rem;
+    }
+    .badge-tag.spicy { background: #F8E3DB; color: var(--paprika); }
+
+    /* ---- Brunch banner ---- */
+    .brunch-banner {
+      background: var(--basket-brown);
+      color: var(--cream);
+      padding: 3.75rem 0;
+      position: relative;
+    }
+    .brunch-banner h2 { color: var(--cream); font-weight: 700; }
+    .brunch-banner .gold { color: var(--grass-gold); }
+
+    /* ---- About ---- */
+    .about-section { padding: 4.5rem 0; background: var(--cream-deep); }
+    .about-section h2 { color: var(--marsh-green); font-weight: 700; }
+    .about-quote {
+      font-family: 'Fraunces', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--basket-brown);
+      border-left: 5px solid var(--grass-gold);
+      padding-left: 1.25rem;
+    }
+    .family-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid rgba(94,68,38,.14);
+      padding: 2rem;
+    }
+
+    /* ---- Neighborhoods ---- */
+    .hood-pills span {
+      display: inline-block;
+      background: #fff;
+      border: 1px solid rgba(94,68,38,.2);
+      border-radius: 999px;
+      padding: .4rem 1.05rem;
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--basket-brown);
+      margin: .3rem .35rem .3rem 0;
+    }
+
+    /* ---- CTA ---- */
+    .cta-section {
+      background: var(--marsh-green);
+      color: var(--cream);
+      padding: 4.5rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(63deg, rgba(194,144,47,.07) 0 3px, transparent 3px 26px);
+      pointer-events: none;
+    }
+    .cta-section h2 { font-weight: 900; font-size: clamp(2rem, 4.5vw, 3.2rem); }
+
+    /* ---- Footer ---- */
+    footer {
+      background: var(--marsh-deep);
+      color: rgba(252,247,235,.85);
+      padding: 3.25rem 0 2rem;
+      font-size: .95rem;
+    }
+    footer h6 {
+      color: var(--grass-gold);
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      font-size: .8rem;
+      margin-bottom: 1rem;
+    }
+    footer a { color: rgba(252,247,235,.85); text-decoration: none; }
+    footer a:hover { color: var(--grass-gold); }
+    .footer-brand {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--cream);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .menu-item { transition: none; }
+      .menu-item:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://sweetgrasscafe.com/"><span class="grass-mark">&#10047;</span> Sweet Grass Cafe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#menu">Food Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#brunch">Brunch</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#visit">Find Us</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-order" href="https://cash.app/order/$sweetpalmcoffeellc/pickup" target="_blank" rel="noopener">Order Pickup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ INFO STRIP ============ -->
+  <div class="info-strip text-center">
+    <div class="container">
+      471 King St, Downtown Charleston, SC &nbsp;·&nbsp; <a href="tel:8439743594">(843) 974-3594</a> &nbsp;·&nbsp; Open Daily · Breakfast, Brunch & Lunch
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="container position-relative">
+      <p class="eyebrow" style="color: var(--grass-gold);">A Lowcountry Kitchen on King Street</p>
+      <h1>Sweet Grass <span class="gold">Cafe</span></h1>
+      <p class="meal-line mt-3">Breakfast <span class="dot">·</span> Brunch <span class="dot">·</span> Lunch</p>
+      <p class="hero-lede mt-3">
+        Downtown Charleston's food-first cafe — hearty <strong>breakfast burritos</strong>, fresh <strong>chicken caesar wraps</strong>, stacked <strong>breakfast sandwiches</strong>, pressed <strong>toasties</strong>, and pastries baked in-house every morning. Made to order, ready for pickup on King Street.
+      </p>
+      <div class="hero-chips mt-3 mb-4">
+        <span>&#127791; Breakfast Burritos</span>
+        <span>&#129367; Caesar Wraps</span>
+        <span>&#129386; Toasties & Melts</span>
+        <span>&#129360; Baked Fresh Daily</span>
+      </div>
+      <div class="d-flex flex-wrap gap-3">
+        <a class="btn btn-order btn-lg" href="https://cash.app/order/$sweetpalmcoffeellc/pickup" target="_blank" rel="noopener">Order Food Online</a>
+        <a class="btn btn-outline-grass btn-lg" style="border-color: var(--grass-gold); color: var(--grass-gold);" href="#menu">View the Menu</a>
+      </div>
+    </div>
+  </header>
+  <div class="weave-band on-dark"></div>
+
+  <!-- ============ FOOD MENU ============ -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <p class="eyebrow">The Food Menu</p>
+      <h2>What's Cooking at Sweet Grass</h2>
+      <p style="max-width: 680px;">Every burrito, wrap, and toastie is made fresh when you order it — nothing pre-packaged, nothing sitting under a heat lamp. This is real breakfast, brunch, and lunch food in the heart of Downtown Charleston. Kitchen closes 30 minutes before store closing.</p>
+
+      <!-- Breakfast Burritos -->
+      <div class="menu-cat">
+        <div class="menu-cat-header">
+          <h3>&#127791; Breakfast Burritos</h3>
+          <span class="cat-note">The morning heavy-hitters</span>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="item-top"><h4>Classic Burrito</h4><span class="price">$11.49</span></div>
+              <p>Eggs, crispy potatoes, cheddar, choice of bacon, turkey bacon, or turkey sausage. Served with AM sauce. No meat — $9.49.</p>
+              <span class="badge-tag">Best Seller</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="item-top"><h4>Spicy Classic Burrito</h4><span class="price">$11.99</span></div>
+              <p>Everything in the Classic plus honey chipotle rolled inside. Egg & cheese (no meat) — $9.99.</p>
+              <span class="badge-tag spicy">Spicy</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="item-top"><h4>Cali Burrito</h4><span class="price">$12.49</span></div>
+              <p>Eggs, crispy potatoes, cheddar, avocado, pico salsa, choice of bacon, turkey bacon, or turkey sausage. Served with green sauce. Egg & cheese (no meat) — $10.49.</p>
+              <span class="badge-tag">Fan Fave</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breakfast Sandwiches -->
+      <div class="menu-cat">
+        <div class="menu-cat-header">
+          <h3>&#129371; Breakfast Sandwiches</h3>
+          <span class="cat-note">Brioche bun · eggs · cheddar · side of AM sauce</span>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Egg & Cheese</h4><span class="price">$8.49</span></div>
+              <p>The simple classic — fluffy eggs and melted cheddar on brioche.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Bacon, Egg & Cheese</h4><span class="price">$10.49</span></div>
+              <p>Crispy bacon stacked with eggs and cheddar.</p>
+              <span class="badge-tag">Popular</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Turkey Bacon, Egg & Cheese</h4><span class="price">$10.49</span></div>
+              <p>A lighter take with all the flavor.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Turkey Sausage, Egg & Cheese</h4><span class="price">$10.49</span></div>
+              <p>Savory turkey sausage, eggs, and cheddar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caesar Wraps -->
+      <div class="menu-cat">
+        <div class="menu-cat-header">
+          <h3>&#129367; Caesar Wraps</h3>
+          <span class="cat-note">The lunch lineup — house-made dressing & croutons</span>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="item-top"><h4>Boca Chicken Caesar</h4><span class="price">$12.99</span></div>
+              <p>Crispy chicken, romaine, parmesan, house-made croutons, and house-made Caesar dressing.</p>
+              <span class="badge-tag">Popular</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="item-top"><h4>Spicy Chicken Caesar</h4><span class="price">$13.49</span></div>
+              <p>Crispy chicken tossed in mild buffalo sauce, romaine, parmesan, croutons, and Caesar dressing.</p>
+              <span class="badge-tag spicy">Spicy</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="item-top"><h4>BLT Chicken Caesar</h4><span class="price">$14.49</span></div>
+              <p>Crispy chicken, bacon, avocado, tomato, romaine, parmesan, croutons, and Caesar dressing.</p>
+              <span class="badge-tag">Fan Fave</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toasties & Light Bites -->
+      <div class="menu-cat">
+        <div class="menu-cat-header">
+          <h3>&#129386; Toasties & Light Bites</h3>
+          <span class="cat-note">Toasties pressed on buttered sourdough</span>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Classic Grilled Cheese</h4><span class="price">$7.99</span></div>
+              <p>American cheddar cheese blend on buttered, pressed sourdough.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Turkey & Swiss Melt</h4><span class="price">$10.99</span></div>
+              <p>Smoked turkey and Swiss cheese blend on buttered pressed sourdough.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>OG Avocado Toast</h4><span class="price">$9.99</span></div>
+              <p>Smashed avocado, sea salt, olive oil, and light everything bagel seasoning. Add hard-boiled eggs +$1.99.</p>
+              <span class="badge-tag">Vegetarian</span>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Turkey Bacon & Cheddar Egg Bites</h4><span class="price">$6.49</span></div>
+              <p>Protein-packed egg bites — a perfect grab-and-go breakfast.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Granola Parfait</h4><span class="price">$6.49</span></div>
+              <p>Greek yogurt, crunchy granola, strawberry purée.</p>
+              <span class="badge-tag">Healthy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- House Baked Pastries -->
+      <div class="menu-cat">
+        <div class="menu-cat-header">
+          <h3>&#129360; House Baked Pastries</h3>
+          <span class="cat-note">Baked in-house every morning</span>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Fresh Baked Butter Croissant</h4><span class="price">$3.50</span></div>
+              <p>Buttery, flaky, and baked fresh in-house each morning.</p>
+              <span class="badge-tag">Fresh Daily</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Chocolate Croissant</h4><span class="price">$3.50</span></div>
+              <p>House-baked croissant filled with rich dark chocolate.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Signature Cinnamon Roll</h4><span class="price">$6.00</span></div>
+              <p>Our famous house-made cinnamon roll. Vegetarian.</p>
+              <span class="badge-tag">Fan Fave</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="menu-item">
+              <div class="item-top"><h4>Texas Jumbo Blueberry Muffin</h4><span class="price">$6.00</span></div>
+              <p>Big, bakery-style blueberry muffin — baked fresh.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <p class="mb-3">Full pricing, seasonal specials & customizations available when ordering online.</p>
+        <a class="btn btn-order btn-lg" href="https://cash.app/order/$sweetpalmcoffeellc/pickup" target="_blank" rel="noopener">See Full Menu & Order Pickup</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BRUNCH BANNER ============ -->
+  <div class="weave-band"></div>
+  <section id="brunch" class="brunch-banner">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <p class="eyebrow" style="color: var(--grass-gold);">Weekend or Weekday — Brunch Lives Here</p>
+          <h2>Charleston Brunch, <span class="gold">Without the Wait</span></h2>
+          <p class="mt-3 mb-0">
+            Skip the two-hour brunch line on King Street. Our breakfast menu runs all day — order a Cali Burrito and avocado toast at 11am on a Tuesday or a full brunch spread for the whole crew on Saturday. Walk in, or order ahead and your food is ready when you are.
+          </p>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <a class="btn btn-order btn-lg" href="https://cash.app/order/$sweetpalmcoffeellc/pickup" target="_blank" rel="noopener">Order Brunch for Pickup</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="weave-band"></div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <p class="eyebrow">Our Story</p>
+          <h2>Named for the Grass That Made Charleston Famous</h2>
+          <p class="mt-3">
+            Sweetgrass is woven into the Lowcountry — literally. The hand-coiled sweetgrass baskets sold along Charleston's market streets are one of the oldest crafts in America, and they stand for the same things we do in the kitchen: patience, real hands-on work, and pride in something made one at a time.
+          </p>
+          <p class="about-quote my-4">
+            "Every burrito gets rolled like it's the only one we're making today. That's the Sweet Grass way."
+          </p>
+          <p>
+            Sweet Grass Cafe is the food-focused branch of the <a href="https://www.sweetpalmcoffee.com/" style="color: var(--basket-brown); font-weight: 700;">Sweet Palm Coffee</a> family. Where Sweet Palm built its name on handcrafted espresso, Sweet Grass puts the kitchen front and center — breakfast burritos, caesar wraps, breakfast sandwiches, toasties, and pastries baked fresh every morning at <strong>471 King Street in Downtown Charleston</strong>.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="family-card">
+            <p class="eyebrow mb-2">Part of the Family</p>
+            <h4 class="display-font" style="color: var(--marsh-green); font-weight: 700;">The Sweet Palm Family</h4>
+            <p class="mt-2 mb-3" style="font-size: .95rem;">
+              Sweet Grass Cafe shares a kitchen, a King Street address, and a standard of quality with Sweet Palm Coffee — Downtown Charleston's favorite spot for artisan coffee and cafe drinks.
+            </p>
+            <a href="https://www.sweetpalmcoffee.com/" class="btn btn-outline-grass" target="_blank" rel="noopener">Visit Sweet Palm Coffee</a>
+            <hr class="my-3" style="border-color: rgba(94,68,38,.2);" />
+            <ul class="list-unstyled mb-0" style="font-size: .93rem;">
+              <li class="mb-2">&#10003; Fresh food made to order — never pre-packaged</li>
+              <li class="mb-2">&#10003; Online ordering for fast King Street pickup</li>
+              <li class="mb-2">&#10003; Breakfast served all day</li>
+              <li>&#10003; In the heart of Downtown Charleston</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEIGHBORHOODS ============ -->
+  <section class="menu-section" style="padding-top: 3.5rem;">
+    <div class="container">
+      <p class="eyebrow">We Feed the Whole Peninsula</p>
+      <h2 style="color: var(--marsh-green); font-weight: 700;">Downtown Charleston Neighborhoods We Serve</h2>
+      <p style="max-width: 660px;">Walking down King Street, coming from class at the College of Charleston, or exploring the Historic District — Sweet Grass Cafe is your breakfast, brunch, and lunch stop on the peninsula.</p>
+      <div class="hood-pills mt-3">
+        <span>King Street</span>
+        <span>Upper King Street</span>
+        <span>Historic District</span>
+        <span>French Quarter</span>
+        <span>Cannonborough</span>
+        <span>Radcliffeborough</span>
+        <span>College of Charleston</span>
+        <span>Harleston Village</span>
+        <span>Downtown Charleston</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="visit" class="cta-section">
+    <div class="container position-relative">
+      <p class="eyebrow" style="color: var(--grass-gold);">Hungry Yet?</p>
+      <h2>Breakfast, Brunch & Lunch<br />Ready on King Street</h2>
+      <p class="mx-auto mt-3" style="max-width: 560px; color: rgba(252,247,235,.9);">
+        Order your breakfast burrito, caesar wrap, or toastie for pickup at 471 King St, Downtown Charleston — or just walk in. We're open daily.
+      </p>
+      <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+        <a class="btn btn-order btn-lg" href="https://cash.app/order/$sweetpalmcoffeellc/pickup" target="_blank" rel="noopener">Order Food Online</a>
+        <a class="btn btn-outline-grass btn-lg" style="border-color: var(--grass-gold); color: var(--grass-gold);" href="https://share.google/SdvCNVNck09SpxLZU" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+    </div>
+  </section>
+  <div class="weave-band on-dark"></div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <p class="footer-brand mb-2"><span style="color: var(--grass-gold);">&#10047;</span> Sweet Grass Cafe</p>
+          <p>Downtown Charleston's food-first cafe for breakfast, brunch, and lunch on King Street. Part of the Sweet Palm Coffee family.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Visit Us</h6>
+          <p class="mb-1">471 King St, Charleston, SC 29403</p>
+          <p class="mb-1"><a href="tel:8439743594">(843) 974-3594</a></p>
+          <p class="mb-0">Open Daily · Breakfast, Brunch & Lunch</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://cash.app/order/$sweetpalmcoffeellc/pickup" target="_blank" rel="noopener">Order Food Online</a></li>
+            <li class="mb-2"><a href="https://www.sweetpalmcoffee.com/" target="_blank" rel="noopener">Sweet Palm Coffee Main Site</a></li>
+            <li class="mb-2"><a href="https://share.google/SdvCNVNck09SpxLZU" target="_blank" rel="noopener">Google Maps & Directions</a></li>
+            <li class="mb-2"><a href="#menu">Food Menu</a></li>
+            <li><a href="#about">About Sweet Grass</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h6>The Family</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://www.sweetpalmcoffee.com/" target="_blank" rel="noopener">Sweet Palm Coffee</a></li>
+            <li><a href="https://sweetgrasscafe.com/">Sweet Grass Cafe</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr style="border-color: rgba(252,247,235,.2);" class="my-4" />
+      <p class="text-center mb-0" style="font-size: .85rem;">© 2026 SweetGrassCafe.com — Part of the Sweet Palm Coffee Family. 471 King St, Downtown Charleston, SC | (843) 974-3594</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
